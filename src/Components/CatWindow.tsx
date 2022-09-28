@@ -1,4 +1,3 @@
-import React from "react";
 import { Cat } from "../module";
 import Button from "./Button";
 
