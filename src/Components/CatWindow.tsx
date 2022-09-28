@@ -17,7 +17,7 @@ const CatWindow = ({ cat, removeCat }: Props) => {
         }}
       ></div>
       <div className="text-wrapper">
-        <h2>
+        <h2 style={{ marginTop: "0px" }}>
           {cat.name} {cat.gender === "male" ? "♂" : "♀"}
         </h2>
         <p>{cat.description}</p>
