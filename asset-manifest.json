@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/jsongenerator/static/css/main.f68d96ee.css",
-    "main.js": "/jsongenerator/static/js/main.caa9c99c.js",
+    "main.js": "/jsongenerator/static/js/main.f673f446.js",
     "index.html": "/jsongenerator/index.html",
     "main.f68d96ee.css.map": "/jsongenerator/static/css/main.f68d96ee.css.map",
-    "main.caa9c99c.js.map": "/jsongenerator/static/js/main.caa9c99c.js.map"
+    "main.f673f446.js.map": "/jsongenerator/static/js/main.f673f446.js.map"
   },
   "entrypoints": [
     "static/css/main.f68d96ee.css",
-    "static/js/main.caa9c99c.js"
+    "static/js/main.f673f446.js"
   ]
 }
