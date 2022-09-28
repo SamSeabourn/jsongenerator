@@ -58,8 +58,9 @@
 
 .json-window-wrapper {
   width: 49%;
+  padding: 1rem;
   border: 4px solid black;
-  background-color: rgb(204, 204, 204);
+  background-color: #fff;
   color: black;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
 }
@@ -78,7 +79,7 @@
 .description-area {
   height: 17.5rem;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1rem;
   resize: none;
 }
 

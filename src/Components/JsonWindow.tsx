@@ -1,13 +1,24 @@
-import React from "react";
+import ReactJson from "react-json-view";
+import { Cat } from "../module";
 
 type Props = {
-  jsonString: string;
+  catList: Array<Cat>;
 };
 
-const JsonWindow = ({ jsonString }: Props) => {
+const JsonWindow = ({ catList }: Props) => {
   return (
     <div className="json-window-wrapper">
-      <textarea className="json-output" disabled value={jsonString} />
+      <ReactJson
+        src={{ currentKittens: [...catList] }}
+        displayObjectSize={false}
+        name={"root"}
+        theme={"bright:inverted"}
+        iconStyle={"circle"}
+        indentWidth={4}
+        collapsed={false}
+        shouldCollapse={false}
+        displayDataTypes={false}
+      />
     </div>
   );
 };

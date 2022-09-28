@@ -6,7 +6,6 @@ import Title from "./Components/Title";
 import JsonWindow from "./Components/JsonWindow";
 import AllCats from "./Components/AllCats";
 import { Cat } from "./module";
-import { json } from "stream/consumers";
 
 const App = () => {
   const [catList, setCatList] = useState<Array<Cat>>([]);
@@ -15,10 +14,9 @@ const App = () => {
     setCatList((catList) => [...catList, newCat]);
   };
 
-  const convertObjectToJson = (allCats: Array<Cat>) => {
-    return JSON.stringify({
-      currentKittens: [...allCats],
-    });
+  const removeCat = (id: string) => {
+    const newCatArray = catList.filter((c) => c.id !== id);
+    setCatList(newCatArray);
   };
 
   return (
@@ -27,10 +25,10 @@ const App = () => {
       <div className="main-container">
         <div className="top-row">
           <AddCat addCat={addCat} />
-          <JsonWindow jsonString={convertObjectToJson(catList)} />
+          <JsonWindow catList={catList} />
         </div>
         <div className="cat-container">
-          <AllCats catList={catList} />
+          <AllCats catList={catList} removeCat={removeCat} />
         </div>
       </div>
     </div>
